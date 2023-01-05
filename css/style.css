@@ -1,0 +1,253 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background_body.jpg);
+}
+
+.wrapper{
+   
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+/* HEADER*/
+.header{
+  
+    height: 400px;
+    width: 100%;
+}
+.header img{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+}
+
+/* MENU */
+.menu{
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    border-radius: 15px;
+    background-color:  #ffccff;
+   
+    
+}
+ul.menu_list li > .menu_danhmuc{
+    display: none;
+    list-style: none;
+    
+}
+ul.menu_list li:hover .menu_danhmuc{
+    display: block;
+    position: absolute;
+
+
+}
+ul.menu_list {
+    position: relative;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 25px;
+    display: flex;
+}
+ul.menu_list li {
+
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    background-color:  #ccf5ff;
+    
+    
+}
+
+ul.menu_list li:hover{
+    background-color: antiquewhite;
+}
+
+ul.menu_list li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+   
+    color: #000;
+}
+/* MAIN */
+.main{
+	
+	height: auto;
+	width: 100%;
+}
+.sidebar{
+    background-color:  #ffccff;
+    
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+ul.sidebar_list {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    line-height: 25px;
+}
+ul.sidebar_list li {
+    
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    background-color:  #ccf5ff;
+    
+}
+
+ul.sidebar_list li:hover{
+    background-color: #ffccff;
+}
+
+ul.sidebar_list li a{
+  
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.maincontent img{
+    width: 100%;
+    height: 100%;
+}
+.new_product{
+    background-color: #ffccff;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+.new_product h3{
+    text-align: center;
+}
+
+/* Hiển thị sản phẩm */
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    
+}
+ul.product_list li img {
+    height: 300px;
+
+}
+
+ul.product_list li {
+    background-color: #ffccff;
+    width: 19%;
+    border: 1px solid black;
+    margin: 5px;
+    float: left;
+   border-radius: 5px;
+    height: 420px;
+    margin-bottom: 50px;
+
+}
+ul.product_list li a {
+    text-decoration: none;
+}
+ul.product_list li img {
+    width: 100%;
+}
+p.price_product {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+p.title_product {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer{
+    background: #ffccff;
+    
+    height: 150px;
+    width: 100%;
+}
+.footer p{
+    text-align: center;
+}
+.clear{
+    clear: both;/* khong cho do , gat cai float left */
+}
+.show{
+    width: 100%;
+    height: 100%;
+}
+.show_new{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Mobie */
+@media screen and (min-width:600px){
+    .wrapper{
+        max-width: 100%;
+        
+    }
+    .menu:after{
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    ul.menu_list:after{
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+   .main:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main{
+        max-width: 100%;
+    }
+    
+    .sidebar{
+        width: 20%;
+        margin-top: 5px;
+        margin-left: 5px;
+        float: left;
+        flex-direction: column;
+        text-align: center;
+    }
+    .maincontent{
+        width: 78%;
+        margin-top:5px;
+        margin-left:5px;
+        float: right;
+    }
+   
+    
+
+}
+
+
+/* Desktop */
+@media screen and (min-width :1024px){
+    .wrapper{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+

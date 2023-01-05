@@ -1,0 +1,101 @@
+
+.silder{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sildes{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.sildes input{
+   display: none;
+}
+.silde{
+    width: 20%;
+    transition: 1s;
+}
+.silde image{
+    width: 100%;
+    height: 100%;
+}
+.navigation-manual{
+     position: absolute;
+     width: 50%;
+     margin-top: -3%;
+     display: flex;
+     justify-content: center;
+}
+.manual-btn{
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background:#c68c53 ;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 50%;
+    margin-top: 1400px;
+    display: none;
+    justify-content: center;
+   
+}
+.navigation-auto div{
+        border: 0px ;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #c68c53;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #c68c53;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #c68c53;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #c68c53;
+}
+@media screen  and (min-width:600px) {
+    .silder{
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .sildes{
+        width: 500%;
+        height: 300px;
+        display: flex;
+    }
+    
+}

@@ -1,0 +1,38 @@
+.admincp_list ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+.admincp_list ul li{
+    float: left;
+    margin: 5px;
+    
+}
+.admincp_list ul li a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.clear{
+    clear: both;
+}
+
+h3.admincp_tile{
+    text-align: center;
+    font-size: 40px;
+    color: darkgoldenrod;
+}
+.wrapper{
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+}

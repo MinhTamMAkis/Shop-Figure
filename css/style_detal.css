@@ -1,0 +1,28 @@
+.warpper_deital{
+    
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.hinhanh_sanpham{
+   
+    width: 30%;
+}
+.hinhanh_sanpham img{
+    width: 80%;
+    
+}
+.chitier_sanpham{
+    
+    width: 49%;
+    margin: 0 10px;
+}
+input.themgiohang {
+    border: none;
+    background: greenyellow;
+    color: black;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
